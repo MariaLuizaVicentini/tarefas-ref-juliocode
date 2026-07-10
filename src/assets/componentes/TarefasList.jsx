@@ -3,7 +3,7 @@ import '../../App.css'
 function TarefasList(){
     let listaTarefas = ["comer", "dormir"]
     return(
-        <ul>
+        <ul className='tarefas-lista'>
             {
                 listaTarefas.map((tarefaAtual) => {
                     return(
