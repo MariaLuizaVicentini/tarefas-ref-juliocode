@@ -6,7 +6,9 @@ function TarefaForm() {
 
     function criaTarefaLocalStorage(){
         let tarefasAntigas = JSON.parse(localStorage.getItem("tarefas")) || []
-        localStorage.setItem("tarefas", nomeTarefa)
+        const tarefasNovas = [...tarefasAntigas, nomeTarefa]
+        const tarefasNovasString = JSON.stringify(tarefasNovas)
+        localStorage.setItem("tarefas", tarefasNovasString)
     }
 
     return(
