@@ -3,9 +3,9 @@ import '../../App.css'
 function Sidebar() {
     return (
         <nav className="nav-bar">
-            <button>Todas</button>
-            <button>Completas</button>
-            <button>Favoritas</button>
+            <button className='btn-principal'>Todas</button>
+            <button className='btn-principal'>Completas</button>
+            <button className='btn-principal'>Favoritas</button>
         </nav>
     )
 }
