@@ -1,4 +1,12 @@
+import '../../App.css'
+
 function Sidebar() {
-    return <h1>Ta ok a sidebar</h1>
+    return (
+        <nav className="nav-bar">
+            <button>Todas</button>
+            <button>Completas</button>
+            <button>Favoritas</button>
+        </nav>
+    )
 }
 export default Sidebar;
