@@ -38,7 +38,7 @@ header {
 }
 
 .conteudo-principal{
-
+    width: 100vw;
 }
 
 .btn-principal{
@@ -50,4 +50,5 @@ header {
 
 .tarefas{
     background-color: var(--cor-secundaria);
+    height: 100%;
 }
