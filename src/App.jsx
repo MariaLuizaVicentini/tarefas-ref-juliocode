@@ -6,9 +6,6 @@ import { useState } from "react";
 import { CheckCircle } from "@mui/icons-material";
 
 function App() {
-  localStorage.setItem("nome", "maluzera")
-  localStorage.setItem("idade", 23)
-
 
   return (
     <>

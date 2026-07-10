@@ -1,9 +1,20 @@
+import { useState } from 'react';
 import '../../App.css'
 
 function TarefaForm() {
+    const [nomeTarefa, setNomeTarefa] = useState("")
+
+    function criaTarefaLocalStorage(){
+        localStorage.setItem("tarefas", nomeTarefa)
+    }
+
     return(
-        <form className='tarefa-form' action="">
-            <input type="text" placeholder='Adicionar tarefa'/>
+        <form onSubmit={criaTarefaLocalStorage} className='tarefa-form' action="">
+            <input onChange={
+                (evento) => {
+                    setNomeTarefa(evento.target.value)
+                }
+            } type="text" placeholder='Adicionar tarefa'/>
             <button className='btn-adicionar' >
                 Adicionar tarefa
             </button>
