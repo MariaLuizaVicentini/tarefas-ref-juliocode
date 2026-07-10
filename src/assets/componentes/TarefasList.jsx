@@ -1,3 +1,4 @@
+import { RadioButtonChecked, Star, Delete } from '@mui/icons-material'
 import '../../App.css'
 
 function TarefasList(){
@@ -7,7 +8,18 @@ function TarefasList(){
             {
                 listaTarefas.map((tarefaAtual) => {
                     return(
-                        <li> {tarefaAtual} </li>
+                        <li className='tarefa-unica'> 
+                            <section className='texto-tarefa'>
+                                <RadioButtonChecked/>
+                                <span> 
+                                {tarefaAtual} 
+                                </span>
+                            </section>
+                            <section className='acoes-tarefa'>
+                                <div> <Star/> </div>
+                                <div> <Delete/> </div>
+                            </section>
+                        </li>
                     )
                 })
             }

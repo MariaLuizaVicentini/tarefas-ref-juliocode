@@ -93,3 +93,30 @@ input{
     max-height: 80%;
     overflow-y: scroll;
 }
+
+.tarefa-unica{
+    display: flex;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.tarefa-unica:hover{
+    background-color: var(--cor-terciaria);
+}
+
+.acoes-tarefa{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.texto-tarefa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
