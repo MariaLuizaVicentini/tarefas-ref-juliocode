@@ -1,7 +1,9 @@
 import Sidebar from './assets/componentes/Sidebar'
 import Tarefas from './assets/componentes/Tarefas'
-import { useState } from 'react'
 import './App.css'
+
+import { useState } from 'react'
+import { CheckCircle } from '@mui/icons-material'
 
 function App() {
 
@@ -9,6 +11,7 @@ function App() {
     <div>
       <header>
         <h1>Tarefas App</h1>
+        <CheckCircle></CheckCircle>
       </header>
       <div className='container-conteudo'>
         <Sidebar/>
