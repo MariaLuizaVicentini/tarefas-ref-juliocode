@@ -47,6 +47,13 @@ header {
     background: transparent;
     width: 100%;
     cursor: pointer;
+    font-size: 18px;    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    white-space: nowrap;
+    padding: 15px;
+    gap: 5px;
 }
 
 .tarefas{
