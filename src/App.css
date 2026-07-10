@@ -52,3 +52,27 @@ header {
     background-color: var(--cor-secundaria);
     height: 100%;
 }
+
+.tarefa-form{
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn-adicionar{
+    background-color: var(--cor-principal);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-adicionar:hover{
+    /* aumenta botao */
+    scale: calc(1.1); 
+
+}
+
+input{
+    color: var(--cor-principal);
+}
