@@ -47,3 +47,7 @@ header {
     width: 100%;
     cursor: pointer;
 }
+
+.tarefas{
+    background-color: var(--cor-secundaria);
+}

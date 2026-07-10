@@ -1,4 +1,5 @@
 import Sidebar from './assets/componentes/Sidebar'
+import Tarefas from './assets/componentes/Tarefas'
 import { useState } from 'react'
 import './App.css'
 
@@ -12,7 +13,7 @@ function App() {
       <div className='container-conteudo'>
         <Sidebar/>
         <section className='conteudo-principal'>
-          <h1> Tarefas </h1>
+          <Tarefas/>
         </section>
       </div>
     </div>
