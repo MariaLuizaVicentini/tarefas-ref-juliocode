@@ -6,4 +6,4 @@
 
 # AULA ATUAL
 
-https://www.youtube.com/watch?v=dWDV2sv_-zk&list=PLrE0Wm1aZt8d7bXUCynHqoQQS8z_Z9r9z&index=19
+https://www.youtube.com/watch?v=C2l-BSos4Vs&list=PLrE0Wm1aZt8d7bXUCynHqoQQS8z_Z9r9z&index=28

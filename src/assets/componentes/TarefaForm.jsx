@@ -1,23 +1,19 @@
 import { useState } from 'react';
 import '../../App.css'
+import * as servicoTarefa from "./services/tarefa.servico";
 
 function TarefaForm() {
     const [nomeTarefa, setNomeTarefa] = useState("")
 
-    function criaTarefaLocalStorage(){
-        let tarefasAntigas = JSON.parse(localStorage.getItem("tarefas")) || []
-        const tarefasNovas = [...tarefasAntigas, nomeTarefa]
-        const tarefasNovasString = JSON.stringify(tarefasNovas)
-        localStorage.setItem("tarefas", tarefasNovasString)
-    }
-
     return(
-        <form onSubmit={criaTarefaLocalStorage} className='tarefa-form' action="">
+        <form onSubmit={
+            () => {servicoTarefa.adicionarTarefa(nomeTarefa)}
+        } className='tarefa-form'>
             <input onChange={
                 (evento) => {
-                    setNomeTarefa(evento.target.value)
+                    {setNomeTarefa(evento.target.value)}
                 }
-            } type="text" placeholder='Adicionar tarefa'/>
+            } placeholder='Adicionar tarefa'/>
             <button className='btn-adicionar' >
                 Adicionar tarefa
             </button>
