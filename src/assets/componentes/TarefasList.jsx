@@ -1,9 +1,10 @@
 import { RadioButtonChecked, Star, Delete } from '@mui/icons-material'
 import '../../App.css'
 import * as servicoTarefa from './services/tarefa.servico'
+import { useState } from 'react'
 
 function TarefasList(){
-    let listaTarefas = servicoTarefa.pegarTarefas()
+    const [tarefas, setTarefas] = useState([])
 
     return(
         <ul className='tarefas-lista'>

@@ -5,5 +5,4 @@
 ---
 
 # AULA ATUAL
-
-https://www.youtube.com/watch?v=C2l-BSos4Vs&list=PLrE0Wm1aZt8d7bXUCynHqoQQS8z_Z9r9z&index=28
+https://www.youtube.com/watch?v=ObMUWdqtiCc&list=PLrE0Wm1aZt8d7bXUCynHqoQQS8z_Z9r9z&index=29
