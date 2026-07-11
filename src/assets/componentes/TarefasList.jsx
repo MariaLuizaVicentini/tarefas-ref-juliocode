@@ -1,8 +1,9 @@
 import { RadioButtonChecked, Star, Delete } from '@mui/icons-material'
 import '../../App.css'
+import * as servicoTarefa from './services/tarefa.servico'
 
 function TarefasList(){
-    let listaTarefas = ["comer", "dormir"]
+    let listaTarefas = servicoTarefa.pegarTarefas()
 
     return(
         <ul className='tarefas-lista'>
