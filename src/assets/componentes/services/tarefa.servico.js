@@ -6,6 +6,6 @@ export function adicionarTarefa(tarefa){
     const tarefasAntigas = pegarTarefas();
     const tarefasNovas = [...tarefasAntigas, tarefa]
     const tarefasNovasString = JSON.stringify(tarefasNovas)
-    localStorage.setItem("tarefas")
+    localStorage.setItem("tarefas", tarefasNovasString)
 
 }

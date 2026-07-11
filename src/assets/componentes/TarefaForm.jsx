@@ -10,9 +10,7 @@ function TarefaForm() {
             () => {servicoTarefa.adicionarTarefa(nomeTarefa)}
         } className='tarefa-form'>
             <input onChange={
-                (evento) => {
-                    {setNomeTarefa(evento.target.value)}
-                }
+                (evento) => {setNomeTarefa(evento.target.value)}
             } placeholder='Adicionar tarefa'/>
             <button className='btn-adicionar' >
                 Adicionar tarefa
