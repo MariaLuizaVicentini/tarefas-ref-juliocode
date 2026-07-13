@@ -19,7 +19,7 @@ function TarefasList(){
                             <section className='texto-tarefa'>
                                 <RadioButtonChecked/>
                                 <span> 
-                                {tarefaAtual} 
+                                {tarefaAtual.titulo} 
                                 </span>
                             </section>
                             <section className='acoes-tarefa'>

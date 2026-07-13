@@ -3,14 +3,19 @@ import '../../App.css'
 import * as servicoTarefa from "./services/tarefa.servico";
 
 function TarefaForm() {
-    const [nomeTarefa, setNomeTarefa] = useState("")
+    const [tarefa, setTarefa] = useState({
+        titulo: "",
+        completa: false,
+        favorita: false,
+        identificacao: ""
+    })
 
     return(
         <form onSubmit={
-            () => {servicoTarefa.adicionarTarefa(nomeTarefa)}
+            () => {servicoTarefa.adicionarTarefa(tarefa)}
         } className='tarefa-form'>
             <input onChange={
-                (evento) => {setNomeTarefa(evento.target.value)}
+                (evento) => {setTarefa({...tarefa, titulo:evento.target.value})}
             } placeholder='Adicionar tarefa'/>
             <button className='btn-adicionar' >
                 Adicionar tarefa
