@@ -44,7 +44,13 @@ function TarefasList(){
                                         <StarBorderOutlined/>
                                     }
                                 </div>
-                                <div> <Delete/> </div>
+                                <div onClick={
+                                    () => {
+                                        servicoTarefa.DeletarTarefa(tarefaAtual.id, setTarefas)
+                                    }
+                                } > 
+                                    <Delete/>
+                                </div>
                             </section>
                         </li>
                     )

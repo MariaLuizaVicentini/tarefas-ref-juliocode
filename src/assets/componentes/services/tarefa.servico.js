@@ -48,3 +48,16 @@ export function inverterFavorito(id, setTarefas){
     const tarefasAtualizadasString = JSON.stringify(tarefasInvertidas);
     localStorage.setItem("tarefas", tarefasAtualizadasString);
 }
+
+export function DeletarTarefa(id, setTarefas){
+    const tarefasAntigas = pegarTarefas()
+    const deletaTarefa = tarefasAntigas.filter(
+        (tarefaAtual) => {
+            const condicao = (tarefaAtual.id != id)
+            return condicao
+        }
+    )
+    setTarefas(deletaTarefa)
+    const tarefasAtualizadasString = JSON.stringify(deletaTarefa)
+    localStorage.setItem("tarefas", tarefasAtualizadasString)
+}
