@@ -16,7 +16,7 @@ function TarefasList(){
                 tarefas.map((tarefaAtual) => {
                     return(
                         <li className='tarefa-unica'> 
-                            <section className='texto-tarefa'>
+                            <section onClick={() => {servicoTarefa.inverterCheck(tarefaAtual.id)}} className='texto-tarefa'>
                                 <RadioButtonChecked/>
                                 <span> 
                                 {tarefaAtual.titulo} 
