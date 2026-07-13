@@ -1,4 +1,4 @@
-import { RadioButtonUnchecked, RadioButtonChecked, Star, Delete } from '@mui/icons-material'
+import { RadioButtonUnchecked, RadioButtonChecked, Star, Delete, StarBorderOutlined } from '@mui/icons-material'
 import '../../App.css'
 import * as servicoTarefa from './services/tarefa.servico'
 import { useEffect, useState } from 'react'
@@ -32,7 +32,18 @@ function TarefasList(){
                                 </span>
                             </section>
                             <section className='acoes-tarefa'>
-                                <div> <Star/> </div>
+                                <div onClick={
+                                    () => {
+                                        servicoTarefa.inverterFavorito(tarefaAtual.id, setTarefas)
+                                    }
+                                }> 
+                                    {
+                                        tarefaAtual.favorita == true ?
+                                        <Star/>
+                                        :
+                                        <StarBorderOutlined/>
+                                    }
+                                </div>
                                 <div> <Delete/> </div>
                             </section>
                         </li>

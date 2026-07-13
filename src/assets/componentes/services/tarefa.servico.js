@@ -30,3 +30,21 @@ export function inverterCheck(id, setTarefas){
     localStorage.setItem("tarefas", tarefasAtualizadasString);
 
 }
+
+export function inverterFavorito(id, setTarefas){
+    const tarefasAntigas = pegarTarefas()
+    const tarefasInvertidas = tarefasAntigas.map(
+        (tarefaAtual) => {
+            if(tarefaAtual.id == id){
+                tarefaAtual.favorita = !tarefaAtual.favorita;
+                return tarefaAtual;
+            }
+            else {
+                return tarefaAtual;
+            }
+        }
+    )
+    setTarefas(tarefasInvertidas)
+    const tarefasAtualizadasString = JSON.stringify(tarefasInvertidas);
+    localStorage.setItem("tarefas", tarefasAtualizadasString);
+}
