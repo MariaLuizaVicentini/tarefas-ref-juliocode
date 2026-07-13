@@ -10,7 +10,7 @@ export function adicionarTarefa(tarefa){
 
 }
 
-export function inverterCheck(id){
+export function inverterCheck(id, setTarefas){
     const tarefasAntigas = pegarTarefas()
     const tarefasInvertidas = tarefasAntigas.map(
         (tarefaAtual) => {
@@ -25,6 +25,7 @@ export function inverterCheck(id){
             }
         }
     )
+    setTarefas(tarefasInvertidas)
     const tarefasAtualizadasString = JSON.stringify(tarefasInvertidas);
     localStorage.setItem("tarefas", tarefasAtualizadasString);
 

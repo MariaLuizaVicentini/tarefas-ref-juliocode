@@ -1,4 +1,4 @@
-import { RadioButtonChecked, Star, Delete } from '@mui/icons-material'
+import { RadioButtonUnchecked, RadioButtonChecked, Star, Delete } from '@mui/icons-material'
 import '../../App.css'
 import * as servicoTarefa from './services/tarefa.servico'
 import { useEffect, useState } from 'react'
@@ -16,10 +16,19 @@ function TarefasList(){
                 tarefas.map((tarefaAtual) => {
                     return(
                         <li className='tarefa-unica'> 
-                            <section onClick={() => {servicoTarefa.inverterCheck(tarefaAtual.id)}} className='texto-tarefa'>
-                                <RadioButtonChecked/>
+                            <section onClick={
+                                    () => {
+                                        servicoTarefa.inverterCheck(tarefaAtual.id, setTarefas)
+                                    }
+                                } className='texto-tarefa'>
+                                    {
+                                        tarefaAtual.completa == true ? 
+                                        <RadioButtonChecked/>
+                                        :
+                                        <RadioButtonUnchecked/>
+                                    }
                                 <span> 
-                                {tarefaAtual.titulo} 
+                                    {tarefaAtual.titulo} 
                                 </span>
                             </section>
                             <section className='acoes-tarefa'>

@@ -7,7 +7,7 @@ function TarefaForm() {
         titulo: "",
         completa: false,
         favorita: false,
-        id: ""
+        id: crypto.randomUUID()
     })
 
     return(
