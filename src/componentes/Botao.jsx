@@ -1,9 +1,11 @@
 import { Star, Check, CheckBoxRounded } from '@mui/icons-material'
 
+import { Link } from 'react-router-dom';
+
 import "../App.css"
 
 
-function Botao({nomeDoBotao, iconeBotao}){
+function Botao({nomeDoBotao, iconeBotao, rota}){
     let icone;
     
     if(iconeBotao == "CheckBoxRounded"){
@@ -20,10 +22,10 @@ function Botao({nomeDoBotao, iconeBotao}){
 
     return (
         <button className="btn-principal">
-            <section>
+            <Link className="link-btn" to={rota}>
                 {icone}
                 {nomeDoBotao}
-            </section>
+            </Link>
         </button>
     )
 }

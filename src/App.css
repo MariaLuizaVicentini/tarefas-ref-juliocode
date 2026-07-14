@@ -56,6 +56,11 @@ header {
     gap: 5px;
 }
 
+.btn-principal:hover{
+    background-color: var(--cor-terciaria);
+}
+
+
 .tarefas{
     background-color: var(--cor-secundaria);
     height: 100%;
@@ -126,4 +131,13 @@ input{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.link-btn{
+    width: 100%;
+    text-decoration: none;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

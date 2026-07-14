@@ -5,9 +5,9 @@ import Botao from './Botao';
 function Sidebar() {
   return (
     <nav className="nav-bar">
-        <Botao nomeDoBotao="Todas" iconeBotao="CheckBoxRounded"></Botao>
-        <Botao nomeDoBotao="Completas" iconeBotao="Check"></Botao>
-        <Botao nomeDoBotao="Favoritas" iconeBotao="Star"></Botao>
+        <Botao nomeDoBotao="Todas" iconeBotao="CheckBoxRounded" rota="/"></Botao>
+        <Botao nomeDoBotao="Completas" iconeBotao="Check" rota="/completas"></Botao>
+        <Botao nomeDoBotao="Favoritas" iconeBotao="Star" rota="/favoritas"></Botao>
     </nav>
   );
 }
