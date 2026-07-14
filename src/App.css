@@ -1,6 +1,8 @@
 @import './var.css';
 
-
+html {
+    background-color: var(--cor-principal);
+}
 
 * {
     padding: 0;
@@ -76,6 +78,9 @@ header {
     display: flex;
     gap: 10px;
 
+}
+.tarefa-form input {
+    padding: 10px;
 }
 
 .btn-adicionar{
