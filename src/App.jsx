@@ -5,6 +5,7 @@ import "./App.css";
 
 import { useState } from "react";
 import { CheckCircle } from "@mui/icons-material";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 
@@ -16,9 +17,13 @@ function App() {
       </header>
       <div className="container-conteudo">
         <Sidebar />
-        <section className="conteudo-principal">
-          <Tarefas />
-        </section>
+        <div className="conteudo-principal">
+          <Routes>
+            <Route path="/" element={<Tarefas />}> </Route>
+            <Route path="/completas" element={<Tarefas/>}> </Route>
+            <Route path="/favoritas" element={<Tarefas/>}> </Route>
+          </Routes>
+        </div>
       </div>
     </>
   );
