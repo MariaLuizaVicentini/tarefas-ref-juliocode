@@ -1,29 +1,13 @@
 import '../App.css'
 
-
-import { Star, Check, CheckBoxRounded } from '@mui/icons-material'
+import Botao from './Botao';
 
 function Sidebar() {
   return (
     <nav className="nav-bar">
-        <button className="btn-principal">
-            <section>
-                <CheckBoxRounded></CheckBoxRounded>
-                Todas
-            </section>
-        </button>
-        <button className="btn-principal">
-            <section>
-                <Check></Check>
-                Completas
-            </section>
-        </button>
-        <button className="btn-principal">
-            <section>
-                <Star></Star>
-                Favoritas
-            </section>
-        </button>
+        <Botao nomeDoBotao="Todas" iconeBotao="CheckBoxRounded"></Botao>
+        <Botao nomeDoBotao="Completas" iconeBotao="Check"></Botao>
+        <Botao nomeDoBotao="Favoritas" iconeBotao="Star"></Botao>
     </nav>
   );
 }
