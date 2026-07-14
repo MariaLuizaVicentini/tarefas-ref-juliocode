@@ -1,5 +1,5 @@
 import Sidebar from "../src/componentes/Sidebar";
-import Tarefas from "../src/componentes/Tarefas";
+import Tarefas from "../src/pages/Tarefas";
 
 import "./App.css";
 

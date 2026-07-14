@@ -29,6 +29,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 20px;
+    gap: 10px;
 
 }
 
@@ -103,6 +104,8 @@ input{
     border-radius: 20px;
     width: 80%;
     max-height: 80%;
+    overflow-y: scroll;
+    margin-top: 10px;
     overflow-y: scroll;
 }
 

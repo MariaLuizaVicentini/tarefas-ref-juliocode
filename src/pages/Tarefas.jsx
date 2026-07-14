@@ -1,7 +1,7 @@
 import '../App.css'
 
-import TarefasList from './TarefasList';
-import TarefaForm from './TarefaForm';
+import TarefasList from '../componentes/TarefasList';
+import TarefaForm from '../componentes/TarefaForm';
 
 function Tarefas() {
 
