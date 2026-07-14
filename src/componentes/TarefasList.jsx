@@ -1,6 +1,6 @@
 import { RadioButtonUnchecked, RadioButtonChecked, Star, Delete, StarBorderOutlined } from '@mui/icons-material'
-import '../../App.css'
-import * as servicoTarefa from './services/tarefa.servico'
+import '../App.css'
+import * as servicoTarefa from '../services/tarefa.servico'
 import { useEffect, useState } from 'react'
 
 function TarefasList(){

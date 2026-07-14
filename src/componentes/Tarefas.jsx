@@ -1,4 +1,5 @@
-import '../../App.css'
+import '../App.css'
+
 import TarefasList from './TarefasList';
 import TarefaForm from './TarefaForm';
 

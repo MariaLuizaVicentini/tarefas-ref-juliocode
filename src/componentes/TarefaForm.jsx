@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../../App.css'
-import * as servicoTarefa from "./services/tarefa.servico";
+import '../App.css'
+import * as servicoTarefa from "../services/tarefa.servico";
 
 function TarefaForm() {
     const [tarefa, setTarefa] = useState({

@@ -1,5 +1,6 @@
-import Sidebar from "./assets/componentes/Sidebar";
-import Tarefas from "./assets/componentes/Tarefas";
+import Sidebar from "../src/componentes/Sidebar";
+import Tarefas from "../src/componentes/Tarefas";
+
 import "./App.css";
 
 import { useState } from "react";

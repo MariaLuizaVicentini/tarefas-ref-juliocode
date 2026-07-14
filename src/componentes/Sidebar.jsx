@@ -1,4 +1,6 @@
-import "../../App.css";
+import '../App.css'
+
+
 import { Star, Check, CheckBoxRounded } from '@mui/icons-material'
 
 function Sidebar() {
